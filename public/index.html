@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Image Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="text"], select { width: 100%; padding: 8px; }
+        .preview { margin-top: 20px; padding: 20px; border: 1px solid #ccc; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Custom Image Generator</h1>
+        <div class="form-group">
+            <label for="text">Enter Text:</label>
+            <input type="text" id="text" placeholder="Enter your text here">
+        </div>
+        <div class="form-group">
+            <label for="bgColor">Select Background Color:</label>
+            <input type="color" id="bgColor">
+        </div>
+        <div class="form-group">
+            <label for="icon">Select Icon:</label>
+            <select id="icon">
+                <option value="star">Star</option>
+                <option value="heart">Heart</option>
+                <option value="smile">Smile</option>
+            </select>
+        </div>
+        <button id="generateBtn">Generate Image</button>
+        <div class="preview" id="preview"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
